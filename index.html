@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Impresión 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cotizador de Impresión 3D</h1>
+        <button id="toggleDarkMode">Modo Oscuro</button>
+        <div class="form-container">
+            <form id="cotizadorForm">
+                <label for="material">Material:</label>
+                <select id="material" required>
+                    <option value="pla">PLA</option>
+                    <option value="pteg">PTEG</option>
+                    <option value="plu">PLU</option>
+                    <option value="pbt">PBT</option>
+                </select>
+
+                <label for="peso">Peso del modelo (g):</label>
+                <input type="text" id="peso" required>
+
+                <label for="tiempo">Tiempo de impresión (horas):</label>
+                <input type="text" id="tiempo" required>
+
+                <label for="precioLuz">Precio de luz (por hora):</label>
+                <input type="text" id="precioLuz" required>
+
+                <label for="impuestoMateriales">Impuesto de materiales (%):</label>
+                <input type="text" id="impuestoMateriales" required>
+
+                <button type="submit">Calcular Cotización</button>
+            </form>
+        </div>
+
+        <div id="resultado" class="result-container hidden">
+            <h2>Resumen de la Cotización</h2>
+            <p id="costoMaterial"></p>
+            <p id="costoLuz"></p>
+            <p id="impuesto"></p>
+            <p id="total"></p>
+            <button id="recalcular">Volver a Calcular</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
