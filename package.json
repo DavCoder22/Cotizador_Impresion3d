@@ -1,0 +1,12 @@
+{
+    "name": "cotizador-impresion-3d",
+    "version": "1.0.0",
+    "description": "Cotizador de Impresión 3D",
+    "main": "index.html",
+    "scripts": {
+      "start": "echo 'No build required for static files'"
+    },
+    "author": "Tu Nombre",
+    "license": "ISC"
+  }
+  
