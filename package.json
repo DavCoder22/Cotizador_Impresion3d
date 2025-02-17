@@ -6,7 +6,7 @@
     "scripts": {
       "start": "echo 'No build required for static files'"
     },
-    "author": "Tu Nombre",
+    "author": "davcoder22",
     "license": "ISC"
   }
   
